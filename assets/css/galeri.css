@@ -1,0 +1,59 @@
+.filterDiv {
+  float: left;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.grid-item-galeri.filterDiv img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item-galeri:hover img {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.iframe-chery {
+  width: 80rem;
+  height: 40rem;
+}
+
+.section-isotope {
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 1000px) {
+  .section-isotope {
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 767px) {
+  .galeri-foto-chery {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  }
+
+  .grid-item-galeri {
+    width: 100%; /* Lebar foto mengikuti lebar grid container */
+    box-sizing: border-box; /* Untuk memastikan padding dan border tidak menambah lebar elemen */
+  }
+}
+
+/* Media query untuk layar hp */
+@media only screen and (max-width: 768px) {
+  .iframe-chery {
+    width: 35rem;
+    height: 20rem;
+  }
+}
